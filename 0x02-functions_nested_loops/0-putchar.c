@@ -1,16 +1,20 @@
-#include "myheader.h"
+i
+
+#include "main.h"
+
+
 
 
 
 /**
  *
- * * main - Print out reverse alphabet.
+ *  * main - Entry point
  *
- * *
+ *   *
  *
- * * Return: Always 0 (Success)
+ *    * Return: nothing, return void
  *
- * */
+ *     */
 
 
 
@@ -36,6 +40,10 @@ int main(void)
 
 	_putchar('\n');
 
+
+
 	return (0);
 
 }
+
+
