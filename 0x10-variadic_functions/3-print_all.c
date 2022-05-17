@@ -22,20 +22,23 @@ void p_string(va_list list)
 	printf("%s", str);
 }
 /**
- * p_integer - print integer
- * @list:arg
- * Return: void
- */
+* p_integer - print integer
+* @list:arg
+* Return: void
+*/
 void p_integer(va_list list)
 {
 	printf("%i", va_arg(list, int));
 }
 /**
- * p_float - print float
- * @list:arg
- * Return: void
- */
-void p_float(va_list list) { printf("%f", va_arg(list, double)); }
+* p_float - print float
+* @list:arg
+* Return: void
+*/
+void p_float(va_list list)
+{
+	printf("%f", va_arg(list, double));
+}
 /**
  * print_all - print everything
  * @format:arg
@@ -44,13 +47,12 @@ void p_float(va_list list) { printf("%f", va_arg(list, double)); }
 void print_all(const char *const format, ...)
 {
 	unsigned int i, j;
-
 	t_print t[] = {
 		{"c", p_char}, {"s", p_string}, {"i", p_integer},
 		{"f", p_float}, {NULL, NULL}};
 	va_list valist;
 	char *s = "";
-i
+
 	va_start(valist, format);
 	i = 0;
 	while (format && format[i])
